@@ -1,0 +1,41 @@
+{
+  "id": "onkyo-tx-rz50",
+  "brand": "Onkyo",
+  "model": "TX-RZ50",
+  "verified": false,
+  "roomCorrectionSystems": ["Dirac Live"],
+  "channelLevel": { "min": -12, "max": 12, "step": 0.5, "unit": "dB" },
+  "subwooferLevel": { "min": -15, "max": 12, "step": 0.5, "unit": "dB" },
+  "distance": { "min": 0.3, "max": 9.0, "step": 0.03, "unit": "m" },
+  "crossoverOptions": [40, 50, 60, 70, 80, 90, 100, 120, 150, 200],
+  "eq": {
+    "kind": "graphic",
+    "bands": [25, 40, 63, 100, 160, 250, 400, 630, 1000, 1600, 2500, 4000, 6300, 10000, 16000],
+    "subwooferBands": [25, 40, 63, 100, 160],
+    "gain": { "min": -6, "max": 6, "step": 1, "unit": "dB" },
+    "bandQ": 1.4,
+    "availableWithRoomCorrection": false,
+    "maxFiltersPerChannel": null
+  },
+  "testToneOrder": [
+    "frontLeft", "center", "frontRight", "frontHighRight", "topMiddleRight", "rearHighRight",
+    "surroundRight", "surroundBackRight", "surroundBackLeft", "surroundLeft",
+    "rearHighLeft", "topMiddleLeft", "frontHighLeft", "subwoofer"
+  ],
+  "menus": {
+    "bluetoothInput": { "steps": ["Remote: BLUETOOTH"], "note": "Or turn the input selector on the front panel until the display shows BLUETOOTH." },
+    "stereoMode": { "steps": ["Remote: MUSIC", "Press again until the display shows Stereo"], "note": "Stereo keeps each sweep in its own speaker. Avoid All Ch Stereo, Dolby Surround or DTS Neural:X while measuring." },
+    "dynamicFeaturesOff": { "steps": ["Remote: Q (Quick Menu)", "Audio Adjust"], "note": "Turn off Late Night, Music Optimizer and any loudness or dynamic volume feature you see." },
+    "roomCorrectionToggle": { "steps": ["Remote: Q (Quick Menu)", "Dirac Live"], "note": "Choose Off to turn Dirac Live off, or pick your saved filter to keep it on." },
+    "levels": { "steps": ["Remote: SETUP", "Speaker", "Level Calibration"] },
+    "testTone": { "steps": ["Remote: SETUP", "Speaker", "Level Calibration"], "note": "Moving to a speaker in this list plays the receiver's test tone through it." },
+    "distances": { "steps": ["Remote: SETUP", "Speaker", "Distance"] },
+    "crossover": { "steps": ["Remote: SETUP", "Speaker", "Crossover"], "note": "Set your main speakers to a frequency (not Full Band) so deep bass goes to the subwoofer." },
+    "manualEQ": { "steps": ["Remote: SETUP", "Speaker", "Equalizer Settings", "Manual"], "note": "Manual EQ is only available while Dirac Live is off." },
+    "subwooferPhase": { "steps": ["Subwoofer rear panel", "Phase switch or dial"], "note": "Most subwoofers have the phase control on their own back panel." }
+  },
+  "notes": [
+    "Unverified profile built from Onkyo's published conventions. Menu names, ranges and EQ bands must be confirmed on a real TX-RZ50 (v1.1).",
+    "EQ bands and ±6 dB / 1 dB steps follow earlier Onkyo manual-EQ layouts."
+  ]
+}
