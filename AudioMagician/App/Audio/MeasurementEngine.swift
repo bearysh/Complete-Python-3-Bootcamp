@@ -68,7 +68,7 @@ final class MeasurementEngine {
 
         engine.prepare()
         try engine.start()
-        player.scheduleBuffer(buffer, at: nil, options: [])
+        player.scheduleBuffer(buffer, at: nil, options: [], completionHandler: nil)
         player.play()
 
         let total = Double(left.count) / sampleRate + extra
