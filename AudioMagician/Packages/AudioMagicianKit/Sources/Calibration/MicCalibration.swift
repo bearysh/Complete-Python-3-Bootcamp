@@ -13,6 +13,12 @@ public struct MicCalibration: Codable, Sendable, Equatable, Identifiable {
         public var deviationDB: Double
         /// One standard deviation across calibrated units, dB.
         public var uncertaintyDB: Double?
+
+        public init(frequency: Double, deviationDB: Double, uncertaintyDB: Double? = nil) {
+            self.frequency = frequency
+            self.deviationDB = deviationDB
+            self.uncertaintyDB = uncertaintyDB
+        }
     }
 
     public var id: String

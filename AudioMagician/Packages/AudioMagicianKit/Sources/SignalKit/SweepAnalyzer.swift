@@ -16,6 +16,16 @@ public struct SweepResult: Codable, Sendable, Equatable {
     public var impulsePreview: [Float]
     public var impulsePreviewRate: Double
 
+    public init(channel: SweepChannel, response: FrequencyResponse, noiseFloor: FrequencyResponse, arrival: Double, decay: [DecayBand], impulsePreview: [Float], impulsePreviewRate: Double) {
+        self.channel = channel
+        self.response = response
+        self.noiseFloor = noiseFloor
+        self.arrival = arrival
+        self.decay = decay
+        self.impulsePreview = impulsePreview
+        self.impulsePreviewRate = impulsePreviewRate
+    }
+
     /// Signal-to-noise ratio at each grid point.
     public var snrDB: [Double] { zip(response.db, noiseFloor.db).map { $0 - $1 } }
 }
@@ -27,6 +37,14 @@ public struct ProgramResult: Codable, Sendable, Equatable {
     public var latency: Double
     public var peakInputLevel: Double
     public var noiseFloorDBFS: Double
+
+    public init(sweeps: [SweepResult], clockRatio: Double, latency: Double, peakInputLevel: Double, noiseFloorDBFS: Double) {
+        self.sweeps = sweeps
+        self.clockRatio = clockRatio
+        self.latency = latency
+        self.peakInputLevel = peakInputLevel
+        self.noiseFloorDBFS = noiseFloorDBFS
+    }
 
     public var clipped: Bool { peakInputLevel >= 0.98 }
     public var driftPPM: Double { (clockRatio - 1) * 1_000_000 }

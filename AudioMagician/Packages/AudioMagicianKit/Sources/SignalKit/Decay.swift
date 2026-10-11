@@ -7,6 +7,12 @@ public struct DecayBand: Codable, Sendable, Equatable {
     public var t20: Double
     /// Early decay time (0…-10 dB slope ×6), seconds.
     public var edt: Double
+
+    public init(center: Double, t20: Double, edt: Double) {
+        self.center = center
+        self.t20 = t20
+        self.edt = edt
+    }
 }
 
 /// Reverberation-time estimates from an impulse response (ISO 3382 style, simplified).
