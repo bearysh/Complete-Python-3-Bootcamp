@@ -220,7 +220,7 @@ public struct RoomAnalyzer: Sendable {
 
     func averageDecay(_ seats: [SeatMeasurement]) -> [DecayBand] {
         let bands = seats.compactMap { $0.program.sweep(.both)?.decay ?? $0.program.sweeps.first?.decay }.flatMap { $0 }
-        return Decay.octaveCenters.compactMap { c in
+        return Decay.octaveCenters.compactMap { c -> DecayBand? in
             let m = bands.filter { $0.center == c }
             guard !m.isEmpty else { return nil }
             let n = Double(m.count)
