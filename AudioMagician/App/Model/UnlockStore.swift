@@ -15,23 +15,28 @@ final class UnlockStore {
     private(set) var isWorking = false
     var lastError: String?
 
-    #if DEBUG
-    /// Developer override for testing locked/unlocked states.
-    var debugUnlocked: Bool {
-        get { UserDefaults.standard.bool(forKey: "debugUnlocked") }
-        set { UserDefaults.standard.set(newValue, forKey: "debugUnlocked"); refreshDebug() }
-    }
-    private var debugFlag = UserDefaults.standard.bool(forKey: "debugUnlocked")
-    private func refreshDebug() { debugFlag = UserDefaults.standard.bool(forKey: "debugUnlocked") }
+    /// Developer override for testing locked/unlocked states (always false in release builds).
+    private var debugFlag = false
+
     var isUnlocked: Bool { isPurchased || debugFlag }
-    #else
-    var isUnlocked: Bool { isPurchased }
+
+    #if DEBUG
+    var debugUnlocked: Bool {
+        get { debugFlag }
+        set {
+            debugFlag = newValue
+            UserDefaults.standard.set(newValue, forKey: "debugUnlocked")
+        }
+    }
     #endif
 
     @ObservationIgnored private var updates: Task<Void, Never>?
 
     func start() {
         guard updates == nil else { return }
+        #if DEBUG
+        debugFlag = UserDefaults.standard.bool(forKey: "debugUnlocked")
+        #endif
         updates = Task { [weak self] in
             for await result in Transaction.updates {
                 if case .verified(let t) = result {

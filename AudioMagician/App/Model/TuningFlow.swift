@@ -52,6 +52,7 @@ final class TuningFlow {
     init(review record: TuningRecord, profile: ReceiverProfile, capability: MeasurementCapability) {
         self.profile = profile
         self.capability = capability
+        isReview = true
         let session = record.session
         setup = session?.setup ?? RoomSetup(receiverID: profile.id, layout: SpeakerLayout.presets[2])
         seats = session?.seats ?? []
@@ -59,8 +60,7 @@ final class TuningFlow {
         analysis = record.analysis
         plan = record.plan
         savedRecord = record
-        roomName = record.room?.name ?? roomName
-        isReview = true
+        if let name = record.room?.name { roomName = name }
     }
 
     var calibrated: Bool { capability.isCalibrated }

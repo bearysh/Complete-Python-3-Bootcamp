@@ -69,7 +69,12 @@ struct DetailsView: View {
                         .cornerRadius(4)
                 }
                 .chartYScale(domain: -8...8)
-                .chartYAxis { AxisMarks(values: [-6, -3, 0, 3, 6]) { AxisGridLine(); AxisValueLabel() } }
+                .chartYAxis {
+                    AxisMarks(values: [-6, -3, 0, 3, 6]) { _ in
+                        AxisGridLine()
+                        AxisValueLabel()
+                    }
+                }
                 .frame(height: 180)
             }
         }

@@ -55,7 +55,8 @@ struct LabView: View {
 
             if results.count > 1 {
                 Section("Repeatability (100 Hz – 10 kHz, 1/6 oct, L+R)") {
-                    let (maxDev, rms) = repeatability()
+                    let rep = repeatability()
+                    let maxDev = rep.0, rms = rep.1
                     LabeledContent("Max deviation", value: String(format: "±%.2f dB", maxDev))
                     LabeledContent("RMS deviation", value: String(format: "%.2f dB", rms))
                     Text(maxDev <= 0.5 ? "✅ Meets the M0 target (±0.5 dB)." : "⚠️ Above the ±0.5 dB M0 target.")
