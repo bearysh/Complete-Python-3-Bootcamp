@@ -1,0 +1,40 @@
+{
+  "identifier" : "7E3C1A90",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : true,
+      "internalID" : "6740000001",
+      "localizations" : [
+        {
+          "description" : "See the exact receiver settings in every fix plan, for every room.",
+          "displayName" : "Audio Magician Unlock",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.audiomagician.app.unlock",
+      "referenceName" : "Audio Magician Unlock",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6740000000",
+    "_developerTeamID" : "",
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+
+    ]
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

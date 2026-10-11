@@ -26,7 +26,8 @@ final class ReceiverKitTests: XCTestCase {
     func testNearestCrossover() throws {
         let p = try XCTUnwrap(ProfileLibrary.profile(id: "onkyo-tx-rz50"))
         XCTAssertEqual(p.nearestCrossover(to: 85), 90)
-        XCTAssertEqual(p.nearestCrossover(to: 110), 100)
+        XCTAssertEqual(p.nearestCrossover(to: 104), 100)
+        XCTAssertEqual(p.nearestCrossover(to: 112), 120, "log-distance: 112 Hz is nearer 120 than 100")
     }
 
     func testGuideOrdering() async throws {

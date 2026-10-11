@@ -1,0 +1,70 @@
+name: AudioMagician
+options:
+  bundleIdPrefix: com.audiomagician
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+  developmentLanguage: en
+
+packages:
+  AudioMagicianKit:
+    path: Packages/AudioMagicianKit
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+
+targets:
+  AudioMagician:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+    dependencies:
+      - package: AudioMagicianKit
+        product: SignalKit
+      - package: AudioMagicianKit
+        product: Calibration
+      - package: AudioMagicianKit
+        product: ReceiverKit
+      - package: AudioMagicianKit
+        product: RoomAnalysis
+      - package: AudioMagicianKit
+        product: Recommendations
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: Audio Magician
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIUserInterfaceStyle: Dark
+        NSMicrophoneUsageDescription: Audio Magician listens to your speakers through the microphone to measure how your room sounds. Nothing is recorded or uploaded beyond your device.
+        NSCameraUsageDescription: Optional. Point your camera at a speaker to measure how far away it is.
+        ITSAppUsesNonExemptEncryption: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.audiomagician.app
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGN_STYLE: Automatic
+        # Set your Apple Developer Team ID here (or pick the team in Xcode › Signing & Capabilities).
+        DEVELOPMENT_TEAM: ""
+        ENABLE_PREVIEWS: YES
+
+schemes:
+  AudioMagician:
+    build:
+      targets:
+        AudioMagician: all
+    run:
+      config: Debug
+      storeKitConfiguration: App/Resources/AudioMagician.storekit
+    archive:
+      config: Release
