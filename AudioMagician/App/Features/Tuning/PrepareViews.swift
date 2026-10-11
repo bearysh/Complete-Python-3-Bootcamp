@@ -86,9 +86,11 @@ struct ReceiverChecklistView: View {
         let correction = flow.setup.correction == .keep
             ? "Leave \(name) on, with the filter you normally use"
             : "Turn \(name) off"
-        return [
+        let sweepsOnly: [Item] = flow.calibrated ? [
             Item(id: .stereoMode, title: "Choose Stereo listening mode", why: "So each test sound plays from exactly one speaker."),
             Item(id: .dynamicFeaturesOff, title: "Switch off dynamic and loudness features", why: "They change the sound while we measure."),
+        ] : []
+        return sweepsOnly + [
             Item(id: .roomCorrectionToggle, title: correction, why: flow.setup.correction == .keep ? "We'll fine-tune around it." : "We'll replace it with a plan you can see."),
         ]
     }

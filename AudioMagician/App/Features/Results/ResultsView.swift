@@ -70,9 +70,7 @@ struct ResultsView: View {
             }
         } actions: {
             PrimaryButton(title: "See your fix plan", systemImage: "list.bullet.rectangle") { flow.go(.plan) }
-            if flow.isReview {
-                SecondaryButton(title: "Done", action: close)
-            }
+            SecondaryButton(title: "Done for now", action: close)
         }
     }
 }

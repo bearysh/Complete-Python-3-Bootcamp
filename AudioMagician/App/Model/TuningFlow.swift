@@ -81,11 +81,12 @@ final class TuningFlow {
         switch step {
         case .speakers: .correction
         case .correction: .distances
-        case .distances: .connect
+        // Levels-only mode uses the receiver's own test tones, so no Bluetooth is needed.
+        case .distances: calibrated ? .connect : .checklist
         case .connect: .checklist
         case .checklist: .placement
         case .placement: .quiet
-        case .quiet: .volume
+        case .quiet: calibrated ? .volume : .tones
         case .volume: calibrated ? .sweeps : .tones
         case .sweeps: .tones
         case .tones: calibrated && plannedSeats > 1 ? .seats : .analyzing
