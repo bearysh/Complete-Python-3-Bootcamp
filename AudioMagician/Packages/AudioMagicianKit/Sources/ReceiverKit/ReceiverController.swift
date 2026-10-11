@@ -58,7 +58,7 @@ public struct ManualGuideController: ReceiverController {
         changes.sorted(by: Self.order).map { step(for: $0) }
     }
 
-    func step(for change: SettingChange) -> GuideStep {
+    public func step(for change: SettingChange) -> GuideStep {
         switch change {
         case let .level(ch, dB):
             return GuideStep(id: "level-\(ch.rawValue)", title: "\(ch.displayName) level", menu: profile.menu(.levels), valueText: Format.signedDB(dB), change: change)
