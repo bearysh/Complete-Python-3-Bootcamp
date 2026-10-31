@@ -1,0 +1,182 @@
+{
+ "sections": {
+  "factual_extraction": {
+   "score": 0.875,
+   "detail": [
+    {
+     "id": "lease_term",
+     "found_with_citation": true
+    },
+    {
+     "id": "base_rent",
+     "found_with_citation": true
+    },
+    {
+     "id": "hvac_failure_june_10",
+     "found_with_citation": true
+    },
+    {
+     "id": "compressor_estimate",
+     "found_with_citation": true
+    },
+    {
+     "id": "rent_withheld_aug_1",
+     "found_with_citation": false
+    },
+    {
+     "id": "notice_of_default_aug_11",
+     "found_with_citation": true
+    },
+    {
+     "id": "lockout_aug_26",
+     "found_with_citation": true
+    },
+    {
+     "id": "lockout_fee_1500",
+     "found_with_citation": true
+    }
+   ]
+  },
+  "provision_identification": {
+   "score": 1.0,
+   "detail": [
+    {
+     "id": "building_systems_def",
+     "found_with_citation": true
+    },
+    {
+     "id": "tenant_hvac_7_2",
+     "found_with_citation": true
+    },
+    {
+     "id": "no_offset_4_4",
+     "found_with_citation": true
+    },
+    {
+     "id": "default_notice_15_1",
+     "found_with_citation": true
+    },
+    {
+     "id": "lockout_15_2",
+     "found_with_citation": true
+    },
+    {
+     "id": "email_not_notice_17_2",
+     "found_with_citation": true
+    }
+   ]
+  },
+  "document_citation_accuracy": {
+   "score": 1.0,
+   "verified": 66,
+   "total": 66
+  },
+  "authority_verification": {
+   "score": 1.0,
+   "expected_found": 3,
+   "fabricated_rejected": 0,
+   "cited_outside_expected_set": [],
+   "forbidden_cited": []
+  },
+  "unsupported_conclusion_rate": {
+   "rate": 0.0,
+   "unsupported": 0,
+   "findings": 38,
+   "material_failure": false
+  },
+  "major_issue_detection": {
+   "score": 1.0,
+   "detail": [
+    {
+     "id": "lockout_lawfulness",
+     "detected": true
+    },
+    {
+     "id": "unlisted_fee",
+     "detected": true
+    },
+    {
+     "id": "hvac_responsibility_ambiguity",
+     "detected": true
+    },
+    {
+     "id": "rent_offset_prohibited",
+     "detected": true
+    },
+    {
+     "id": "notice_delivery_certified_mail",
+     "detected": true
+    }
+   ]
+  },
+  "argument_quality": {
+   "customer": {
+    "count": 4,
+    "with_weaknesses": 1.0,
+    "with_counterarguments": 1.0,
+    "with_evidence": 1.0
+   },
+   "opposing": {
+    "count": 4,
+    "with_weaknesses": 1.0,
+    "with_counterarguments": 1.0,
+    "with_evidence": 1.0
+   },
+   "materially_different": true,
+   "judge_unsupported_interpretations": 4
+  },
+  "uncertainty_recognition": {
+   "missing_evidence_score": 1.0,
+   "detail": [
+    {
+     "id": "vendor_invoice",
+     "identified": true
+    },
+    {
+     "id": "certified_mail_receipt",
+     "identified": true
+    },
+    {
+     "id": "exhibit_c_guaranty",
+     "identified": true
+    },
+    {
+     "id": "cam_reconciliation",
+     "identified": true
+    }
+   ],
+   "ambiguity_recognized": false,
+   "timing_issue_recognized": true,
+   "unverified_claims_listed": 4,
+   "forbidden_certainty_phrases": [],
+   "basis_distribution": {
+    "documented": 13,
+    "customer_allegation": 3
+   }
+  },
+  "report_readability": {
+   "executive_summary_words": 159,
+   "avg_sentence_words": 22.714285714285715,
+   "questions_for_attorney": 10,
+   "main_issues": 5
+  },
+  "runtime": {
+   "total_ms": 511,
+   "per_stage_ms": {
+    "extraction_check": 1,
+    "knowledge": 62,
+    "advocate_customer": 54,
+    "advocate_opposing": 61,
+    "judge": 54,
+    "senior_partner": 56,
+    "verification": 27,
+    "report_draft": 196
+   },
+   "prompt_tokens": 78694,
+   "completion_tokens": 14492,
+   "provider": "scripted",
+   "model": "fixture:default"
+  }
+ },
+ "disclaimer": "Software-quality scorecard only. Does not establish legal accuracy; attorney review is required for that."
+}

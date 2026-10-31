@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+# Case data must never live in the repository
+data/
+*.sqlite3
+.env
+/tmp/
+fixtures/synthetic/out/
+tests/e2e/.artifacts/

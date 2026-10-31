@@ -1,0 +1,41 @@
+{
+  "case": "Brazos Bend Coffee Roasters, LLC v. Ridgmar Crossing Partners, LP (synthetic)",
+  "description": "Expected findings for the synthetic Tarrant County commercial lease lockout dispute. Used by scripts/evaluate.py to score a run. Keywords are matched case-insensitively against the stage outputs.",
+  "key_facts": [
+    {"id": "lease_term", "keywords": ["March 1, 2023"], "must_cite": "D1:p1"},
+    {"id": "base_rent", "keywords": ["6,250"], "must_cite": "D1:p1"},
+    {"id": "hvac_failure_june_10", "keywords": ["June 10", "stopped cooling"], "must_cite": "D3:para6"},
+    {"id": "compressor_estimate", "keywords": ["8,400"], "must_cite": "D3:para18"},
+    {"id": "rent_withheld_aug_1", "keywords": ["August", "applying"], "must_cite": "D3:para30"},
+    {"id": "notice_of_default_aug_11", "keywords": ["7,717.50"], "must_cite": "D2:para10"},
+    {"id": "lockout_aug_26", "keywords": ["locks changed"], "must_cite": "D3:para42"},
+    {"id": "lockout_fee_1500", "keywords": ["1,500"], "must_cite": "D3:para42"}
+  ],
+  "key_provisions": [
+    {"id": "building_systems_def", "keywords": ["Building Systems", "rooftop equipment"], "must_cite": "D1:p1"},
+    {"id": "tenant_hvac_7_2", "keywords": ["exclusively serving the Premises"], "must_cite": "D1:p2"},
+    {"id": "no_offset_4_4", "keywords": ["withhold", "offset"], "must_cite": "D1:p2"},
+    {"id": "default_notice_15_1", "keywords": ["ten (10) days", "written notice"], "must_cite": "D1:p4"},
+    {"id": "lockout_15_2", "keywords": ["93.002"], "must_cite": "D1:p4"},
+    {"id": "email_not_notice_17_2", "keywords": ["electronic mail", "notice"], "must_cite": "D1:p4"}
+  ],
+  "expected_authorities": ["tx-prop-93.002", "tx-prop-93.003", "tx-prop-93.012"],
+  "acceptable_authorities": ["tx-prop-93.005", "tx-prop-93.006", "tx-prop-91.004", "tx-prop-91.006", "tx-prop-24.005", "tx-prop-24.0051", "tx-cprc-38.001", "tx-prop-54.021"],
+  "major_issues": [
+    {"id": "lockout_lawfulness", "keywords": ["lockout", "93.002"]},
+    {"id": "unlisted_fee", "keywords": ["1,500", "93.012"]},
+    {"id": "hvac_responsibility_ambiguity", "keywords": ["rooftop", "Building System"]},
+    {"id": "rent_offset_prohibited", "keywords": ["offset"]},
+    {"id": "notice_delivery_certified_mail", "keywords": ["certified"]}
+  ],
+  "expected_missing_evidence": [
+    {"id": "vendor_invoice", "keywords": ["invoice"]},
+    {"id": "certified_mail_receipt", "keywords": ["certified"]},
+    {"id": "exhibit_c_guaranty", "keywords": ["Exhibit C"]},
+    {"id": "cam_reconciliation", "keywords": ["reconciliation"]}
+  ],
+  "expected_timing_issue": {"keywords": ["93.003", "reentry"]},
+  "ambiguity": {"keywords": ["ambigu", "conflict"]},
+  "forbidden_phrases": ["% chance", "percent chance", "probability of success", "will win", "guaranteed to"],
+  "must_not_cite_authorities": ["tx-prop-999.999"]
+}

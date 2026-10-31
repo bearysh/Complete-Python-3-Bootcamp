@@ -1,0 +1,636 @@
+{
+ "parties": [
+  {
+   "name": "Ridgmar Crossing Partners, LP",
+   "role": "landlord",
+   "refs": [
+    {
+     "ref": "D1:p1",
+     "quote": "Landlord: Ridgmar Crossing Partners, LP, a Texas limited partnership"
+    }
+   ]
+  },
+  {
+   "name": "Brazos Bend Coffee Roasters, LLC",
+   "role": "tenant",
+   "refs": [
+    {
+     "ref": "D1:p1",
+     "quote": "Tenant: Brazos Bend Coffee Roasters, LLC, a Texas limited liability company"
+    }
+   ]
+  },
+  {
+   "name": "Marisol Delgado-Pruitt",
+   "role": "guarantor",
+   "refs": [
+    {
+     "ref": "D1:p1",
+     "quote": "Guarantor: Marisol Delgado-Pruitt, pursuant to the Guaranty attached as Exhibit C"
+    }
+   ]
+  }
+ ],
+ "document_summaries": [
+  {
+   "doc_ref": "D1",
+   "document_type": "Retail lease agreement (6 pages)",
+   "summary": "Sixty-month retail lease for Suite 140 at Ridgmar Crossing, Fort Worth, commencing March 1, 2023. Base rent $6,250/month, estimated operating expenses $1,100/month, security deposit $12,500. Allocates repair duties between Landlord (Building Systems) and Tenant (HVAC exclusively serving the Premises), prohibits rent offset, requires written notice by certified mail or courier, and authorizes lock changes under Texas Property Code 93.002 after an Event of Default."
+  },
+  {
+   "doc_ref": "D2",
+   "document_type": "Notice of default letter dated August 11, 2025",
+   "summary": "Landlord asserts non-payment of $7,350 August rent plus a $367.50 late charge, rejects Tenant's HVAC credit, and states that remedies including a lock change will be exercised if payment is not received within ten days."
+  },
+  {
+   "doc_ref": "D3",
+   "document_type": "Email correspondence June 10 to August 26, 2025 (printed by Tenant)",
+   "summary": "Tenant reports HVAC failure; property manager attributes the rooftop unit to Tenant under Section 7.2; Tenant disputes and replaces the compressor through the vendor; Tenant applies $8,400 against August rent; Landlord declares default; locks are changed on or about August 26 and a $1,500 fee is demanded for a new key."
+  }
+ ],
+ "key_provisions": [
+  {
+   "id": "P1",
+   "title": "Definition of Building Systems (Section 1.10)",
+   "summary": "Building Systems are defined as the electrical, plumbing, mechanical, fire and life-safety, and HVAC systems serving the Building generally, including rooftop equipment, up to the point of connection to the Premises.",
+   "refs": [
+    {
+     "ref": "D1:p1",
+     "quote": "heating, ventilation, and air-conditioning systems serving the Building generally, including rooftop equipment, risers, and distribution lines up to the point of connection to the Premises"
+    }
+   ],
+   "ambiguity_notes": "The definition includes 'rooftop equipment' but limits Building Systems to those serving the Building 'generally'. A rooftop unit that serves only Suite 140 arguably falls on either side of that line."
+  },
+  {
+   "id": "P2",
+   "title": "Landlord repair obligation (Section 7.1)",
+   "summary": "Landlord maintains roof, foundation, structural components, common areas, and the Building Systems, but is not liable for failure to repair unless Tenant gave written notice and Landlord failed to commence repairs within a reasonable time not exceeding 30 days.",
+   "refs": [
+    {
+     "ref": "D1:p2",
+     "quote": "Landlord shall maintain in good repair the roof, foundation, exterior walls, structural components of the Building, the common areas, and the Building Systems"
+    }
+   ],
+   "ambiguity_notes": null
+  },
+  {
+   "id": "P3",
+   "title": "Tenant repair obligation for HVAC exclusively serving the Premises (Section 7.2)",
+   "summary": "Tenant must maintain, repair, and replace all HVAC equipment exclusively serving the Premises and keep a quarterly preventive maintenance contract.",
+   "refs": [
+    {
+     "ref": "D1:p2",
+     "quote": "all heating, ventilation, and air-conditioning equipment exclusively serving the Premises"
+    }
+   ],
+   "ambiguity_notes": "Sections 1.10, 7.1 and 7.2 point in different directions for a rooftop unit that exclusively serves Suite 140. Section 2.2 separately represents the unit was in good working order at commencement."
+  },
+  {
+   "id": "P4",
+   "title": "Tenant self-help and no offset (Section 7.4)",
+   "summary": "If Landlord fails to repair within the required time, Tenant may give an additional ten days' written notice of intent to repair, then repair and invoice Landlord, payable within 30 days. The section expressly does not permit offset against Rent.",
+   "refs": [
+    {
+     "ref": "D1:p2",
+     "quote": "Nothing in this Section 7.4 permits Tenant to offset any such cost against Rent"
+    }
+   ],
+   "ambiguity_notes": null
+  },
+  {
+   "id": "P5",
+   "title": "Independent covenants; no withholding or offset (Section 4.4)",
+   "summary": "Tenant's rent covenant is independent and Tenant may not withhold, abate, or offset Rent for any alleged Landlord default; Tenant's remedies are damages or injunctive relief.",
+   "refs": [
+    {
+     "ref": "D1:p2",
+     "quote": "Tenant shall not withhold, abate, or offset Rent on account of any alleged default by Landlord"
+    }
+   ],
+   "ambiguity_notes": null
+  },
+  {
+   "id": "P6",
+   "title": "Events of Default and ten-day cure after written notice (Section 15.1(a))",
+   "summary": "Failure to pay Rent becomes an Event of Default only if it continues for ten days after Landlord gives Tenant written notice.",
+   "refs": [
+    {
+     "ref": "D1:p4",
+     "quote": "Tenant fails to pay any Rent when due and such failure continues for ten (10) days after Landlord gives Tenant written notice thereof"
+    }
+   ],
+   "ambiguity_notes": null
+  },
+  {
+   "id": "P7",
+   "title": "Lock-change remedy tied to Property Code 93.002 (Section 15.2(c))",
+   "summary": "Upon an Event of Default Landlord may change door locks in accordance with Texas Property Code Section 93.002 and must post a notice with the name and address or telephone number of the person from whom a new key may be obtained.",
+   "refs": [
+    {
+     "ref": "D1:p4",
+     "quote": "change the door locks of the Premises in accordance with Section 93.002 of the Texas Property Code"
+    }
+   ],
+   "ambiguity_notes": null
+  },
+  {
+   "id": "P8",
+   "title": "Notices must be written and delivered by hand, courier, or certified mail; email is not notice (Sections 17.1 and 17.2)",
+   "summary": "Notice is deemed given on personal delivery, one business day after overnight courier, or three business days after certified mailing. Email does not constitute notice unless the recipient acknowledges receipt in a written reply.",
+   "refs": [
+    {
+     "ref": "D1:p4",
+     "quote": "Communications sent by electronic mail are for convenience only and shall not constitute notice under this Lease unless the receiving party expressly acknowledges receipt in a written reply"
+    }
+   ],
+   "ambiguity_notes": "Whether Tenant's August 26 email referring to 'the August 11 email attachment' is a written acknowledgment of receipt is debatable."
+  },
+  {
+   "id": "P9",
+   "title": "Late charge (Section 4.3); attorneys' fees (Section 24.2); governing law and Tarrant County venue (Section 24.1)",
+   "summary": "Five percent late charge after five days; prevailing party recovers reasonable attorneys' fees; Texas law governs and venue lies exclusively in Tarrant County state courts.",
+   "refs": [
+    {
+     "ref": "D1:p2",
+     "quote": "Tenant shall pay a late charge equal to five percent (5%) of the overdue amount"
+    },
+    {
+     "ref": "D1:p5",
+     "quote": "Venue for any action arising under this Lease shall lie exclusively in the state courts located in Tarrant County, Texas"
+    }
+   ],
+   "ambiguity_notes": null
+  }
+ ],
+ "facts": [
+  {
+   "id": "F1",
+   "statement": "The lease term is sixty months commencing March 1, 2023 and expiring February 28, 2028.",
+   "basis": "documented",
+   "date": "2023-03-01",
+   "refs": [
+    {
+     "ref": "D1:p1",
+     "quote": "commencing on March 1, 2023 (the \"Commencement Date\") and expiring on February 28, 2028"
+    }
+   ]
+  },
+  {
+   "id": "F2",
+   "statement": "Base Rent is $6,250.00 per month for months 1 through 36 and Tenant's estimated share of operating expenses is $1,100.00 per month.",
+   "basis": "documented",
+   "date": null,
+   "refs": [
+    {
+     "ref": "D1:p1",
+     "quote": "Base Rent: $6,250.00 per month during Lease Months 1 through 36"
+    },
+    {
+     "ref": "D1:p1",
+     "quote": "estimated at $1,100.00 per month for calendar year 2023"
+    }
+   ]
+  },
+  {
+   "id": "F3",
+   "statement": "Landlord represented that the HVAC unit serving the Premises would be in good working order on the Commencement Date.",
+   "basis": "documented",
+   "date": "2023-03-01",
+   "refs": [
+    {
+     "ref": "D1:p1",
+     "quote": "Landlord represents that the heating, ventilation, and air-conditioning unit serving the Premises shall be in good working order on the Commencement Date"
+    }
+   ]
+  },
+  {
+   "id": "F4",
+   "statement": "On June 10, 2025 Tenant emailed the property manager that the rooftop AC unit for Suite 140 had stopped cooling and asked for same-day service.",
+   "basis": "documented",
+   "date": "2025-06-10",
+   "refs": [
+    {
+     "ref": "D3:para6",
+     "quote": "the rooftop AC unit for our suite stopped cooling overnight"
+    }
+   ]
+  },
+  {
+   "id": "F5",
+   "statement": "On June 20, 2025 the property manager reported the vendor's finding that the compressor on the 7.5-ton rooftop unit serving Suite 140 had failed, with a replacement estimate of $8,400, and took the position that Section 7.2 made it Tenant's responsibility.",
+   "basis": "documented",
+   "date": "2025-06-20",
+   "refs": [
+    {
+     "ref": "D3:para18",
+     "quote": "the compressor on the 7.5-ton rooftop unit serving Suite 140 has failed and the unit is at end of life. Replacement estimate is $8,400"
+    }
+   ]
+  },
+  {
+   "id": "F6",
+   "statement": "On June 21, 2025 Tenant disputed responsibility by email, said it would proceed with replacement and expected reimbursement, and stated 'Consider this our written notice.'",
+   "basis": "documented",
+   "date": "2025-06-21",
+   "refs": [
+    {
+     "ref": "D3:para24",
+     "quote": "We are going ahead with the replacement through Trinity Mechanical because we cannot wait any longer, and we expect Landlord to reimburse us. Consider this our written notice."
+    }
+   ]
+  },
+  {
+   "id": "F7",
+   "statement": "Tenant states that the replacement was completed on June 27 and that it paid the vendor's $8,400 invoice on July 3, 2025. No invoice or proof of payment is in the file.",
+   "basis": "customer_allegation",
+   "date": "2025-07-03",
+   "refs": [
+    {
+     "ref": "D3:para30",
+     "quote": "Trinity Mechanical completed the replacement on June 27 and we paid their invoice of $8,400 on July 3"
+    }
+   ]
+  },
+  {
+   "id": "F8",
+   "statement": "On August 1, 2025 Tenant did not pay August rent and operating expenses ($7,350) and instead applied the $8,400 repair cost against them by email.",
+   "basis": "documented",
+   "date": "2025-08-01",
+   "refs": [
+    {
+     "ref": "D3:para30",
+     "quote": "we are applying the $8,400 against August rent and CAM ($7,350)"
+    }
+   ]
+  },
+  {
+   "id": "F9",
+   "statement": "Landlord's notice of default dated August 11, 2025 demanded $7,717.50 (rent, operating expenses, and a $367.50 late charge) within ten days and warned of a lock change under Property Code 93.002.",
+   "basis": "documented",
+   "date": "2025-08-11",
+   "refs": [
+    {
+     "ref": "D2:para10",
+     "quote": "A late charge of $367.50 has accrued under Section 4.3. The total amount now due is $7,717.50"
+    },
+    {
+     "ref": "D2:para12",
+     "quote": "Unless the total amount due is received by Landlord within ten (10) days after the date of this notice, an Event of Default will exist"
+    }
+   ]
+  },
+  {
+   "id": "F10",
+   "statement": "The notice letter is captioned as sent via certified mail, return receipt requested, and electronic mail.",
+   "basis": "documented",
+   "date": "2025-08-11",
+   "refs": [
+    {
+     "ref": "D2:para4",
+     "quote": "VIA CERTIFIED MAIL, RETURN RECEIPT REQUESTED, AND ELECTRONIC MAIL"
+    }
+   ]
+  },
+  {
+   "id": "F11",
+   "statement": "Tenant asserts it never received a certified letter and saw only the August 11 email attachment.",
+   "basis": "customer_allegation",
+   "date": "2025-08-26",
+   "refs": [
+    {
+     "ref": "D3:para42",
+     "quote": "We never received any certified letter; the only notice we saw was the August 11 email attachment"
+    }
+   ]
+  },
+  {
+   "id": "F12",
+   "statement": "On the morning of August 26, 2025 Tenant found the locks changed and a posted notice giving a management name and telephone number for obtaining a new key.",
+   "basis": "documented",
+   "date": "2025-08-26",
+   "refs": [
+    {
+     "ref": "D3:para42",
+     "quote": "To obtain a new key contact Ridgmar Crossing Management at (817) 555-0142 during regular business hours"
+    }
+   ]
+  },
+  {
+   "id": "F13",
+   "statement": "Tenant reports being told a new key would be released only on payment of $7,717.50 plus a $1,500.00 lockout and administrative fee; Landlord's reply describes the fee as covering the locksmith and staff time.",
+   "basis": "documented",
+   "date": "2025-08-26",
+   "refs": [
+    {
+     "ref": "D3:para42",
+     "quote": "a new key would be released only after payment of $7,717.50 plus a $1,500.00 \"lockout and administrative fee\""
+    },
+    {
+     "ref": "D3:para48",
+     "quote": "The administrative fee covers the locksmith and our staff time. Keys will be released upon payment in full."
+    }
+   ]
+  },
+  {
+   "id": "F14",
+   "statement": "Landlord's principal states the notice was sent by certified mail on August 11 and that the ten-day cure period expired on August 21.",
+   "basis": "documented",
+   "date": "2025-08-26",
+   "refs": [
+    {
+     "ref": "D3:para48",
+     "quote": "the notice of default was sent by certified mail on August 11 and the ten-day cure period expired on August 21"
+    }
+   ]
+  },
+  {
+   "id": "F15",
+   "statement": "The lease requires an annual operating-expense reconciliation statement within 120 days after year end; no 2024 statement appears in the file.",
+   "basis": "documented",
+   "date": null,
+   "refs": [
+    {
+     "ref": "D1:p2",
+     "quote": "Within one hundred twenty (120) days after the end of each calendar year, Landlord shall deliver to Tenant a statement reasonably itemizing actual Operating Expenses"
+    }
+   ]
+  },
+  {
+   "id": "F16",
+   "statement": "The user's business is a coffee roaster and cafe that lost afternoon business during the cooling outage.",
+   "basis": "customer_allegation",
+   "date": null,
+   "refs": [
+    {
+     "ref": "D3:para24",
+     "quote": "We have been without cooling for eleven days in June and have lost most of our afternoon business"
+    }
+   ]
+  },
+  {
+   "id": "F90",
+   "statement": "The lease grants Tenant a right to withhold rent during any HVAC outage.",
+   "basis": "documented",
+   "date": null,
+   "refs": [
+    {
+     "ref": "D1:p2",
+     "quote": "Tenant may withhold Rent during any interruption of heating or cooling service"
+    }
+   ]
+  },
+  {
+   "id": "F91",
+   "statement": "A vendor invoice for $8,400 is in the file.",
+   "basis": "documented",
+   "date": null,
+   "refs": [
+    {
+     "ref": "D7:p1",
+     "quote": "Invoice total $8,400.00"
+    }
+   ]
+  },
+  {
+   "id": "F92",
+   "statement": "Landlord accepted late rent in March 2025 without objection.",
+   "basis": "documented",
+   "date": null,
+   "refs": []
+  }
+ ],
+ "timeline": [
+  {
+   "date": "2023-03-01",
+   "description": "Lease commencement; HVAC represented to be in good working order.",
+   "basis": "documented",
+   "refs": [
+    {
+     "ref": "D1:p1",
+     "quote": "commencing on March 1, 2023"
+    }
+   ]
+  },
+  {
+   "date": "2025-06-10",
+   "description": "Tenant reports rooftop AC failure by email.",
+   "basis": "documented",
+   "refs": [
+    {
+     "ref": "D3:para6",
+     "quote": "stopped cooling overnight"
+    }
+   ]
+  },
+  {
+   "date": "2025-06-12",
+   "description": "Property manager dispatches vendor and asserts HVAC is a tenant item.",
+   "basis": "documented",
+   "refs": [
+    {
+     "ref": "D3:para12",
+     "quote": "under the lease the HVAC for your suite is a tenant item"
+    }
+   ]
+  },
+  {
+   "date": "2025-06-20",
+   "description": "Vendor finds failed compressor; $8,400 estimate; Landlord cites Section 7.2.",
+   "basis": "documented",
+   "refs": [
+    {
+     "ref": "D3:para18",
+     "quote": "Replacement estimate is $8,400"
+    }
+   ]
+  },
+  {
+   "date": "2025-06-21",
+   "description": "Tenant disputes responsibility, proceeds with replacement, and declares written notice.",
+   "basis": "documented",
+   "refs": [
+    {
+     "ref": "D3:para24",
+     "quote": "Consider this our written notice"
+    }
+   ]
+  },
+  {
+   "date": "2025-06-27",
+   "description": "Replacement completed (per Tenant).",
+   "basis": "customer_allegation",
+   "refs": [
+    {
+     "ref": "D3:para30",
+     "quote": "completed the replacement on June 27"
+    }
+   ]
+  },
+  {
+   "date": "2025-08-01",
+   "description": "Tenant withholds August rent, applying $8,400 repair cost.",
+   "basis": "documented",
+   "refs": [
+    {
+     "ref": "D3:para30",
+     "quote": "applying the $8,400 against August rent"
+    }
+   ]
+  },
+  {
+   "date": "2025-08-11",
+   "description": "Landlord issues notice of default; ten-day cure demanded.",
+   "basis": "documented",
+   "refs": [
+    {
+     "ref": "D2:para3",
+     "quote": "August 11, 2025"
+    }
+   ]
+  },
+  {
+   "date": "2025-08-21",
+   "description": "Cure period expires according to Landlord.",
+   "basis": "documented",
+   "refs": [
+    {
+     "ref": "D3:para48",
+     "quote": "the ten-day cure period expired on August 21"
+    }
+   ]
+  },
+  {
+   "date": "2025-08-26",
+   "description": "Tenant finds locks changed; $1,500 fee demanded for new key; Tenant demands re-entry.",
+   "basis": "documented",
+   "refs": [
+    {
+     "ref": "D3:para42",
+     "quote": "found the locks changed"
+    }
+   ]
+  }
+ ],
+ "legal_questions": [
+  {
+   "id": "Q1",
+   "question": "Is the rooftop HVAC unit serving only Suite 140 a 'Building System' under Section 1.10 (Landlord's duty) or 'HVAC equipment exclusively serving the Premises' under Section 7.2 (Tenant's duty)?",
+   "why_it_matters": "Determines who bears the $8,400 replacement cost and whether Landlord breached Section 7.1."
+  },
+  {
+   "id": "Q2",
+   "question": "Did Tenant's June 21 email satisfy the written-notice and additional ten-day notice requirements of Sections 7.1 and 7.4, given Section 17.2's rule that email is not notice?",
+   "why_it_matters": "Tenant's reimbursement claim under Section 7.4 depends on proper notice."
+  },
+  {
+   "id": "Q3",
+   "question": "Was Tenant entitled to offset the repair cost against August rent, given Sections 4.4 and 7.4?",
+   "why_it_matters": "If offset was prohibited, Tenant was delinquent and Landlord's remedies may have been triggered."
+  },
+  {
+   "id": "Q4",
+   "question": "Was Landlord's August 11 notice 'given' under Section 17.1, and did an Event of Default under Section 15.1(a) exist before the lock change?",
+   "why_it_matters": "The lease ties the lock-change remedy to an Event of Default, which requires written notice and ten days."
+  },
+  {
+   "id": "Q5",
+   "question": "Did the lock change comply with Texas Property Code Section 93.002(c)(3) and (f), including the posted-notice content and conditioning the new key on payment of only delinquent rent?",
+   "why_it_matters": "A non-compliant lockout exposes Landlord to the remedies in Section 93.002(g) and a writ of reentry under Section 93.003."
+  },
+  {
+   "id": "Q6",
+   "question": "May Landlord assess the $1,500 'lockout and administrative fee' when no such charge is stated in the lease?",
+   "why_it_matters": "Section 93.012 prohibits charges not stated in the lease, exhibits, or amendments."
+  },
+  {
+   "id": "Q7",
+   "question": "What are Tenant's obligations and risks regarding the security deposit and the missing 2024 operating-expense reconciliation?",
+   "why_it_matters": "Affects the net amounts in dispute and Tenant's audit rights under Section 9.3."
+  }
+ ],
+ "candidate_authorities": [
+  {
+   "authority_id": "tx-prop-93.002",
+   "citation": "Tex. Prop. Code \u00a7 93.002",
+   "relevance": "Governs when a commercial landlord may exclude a tenant, permits lock changes for a tenant delinquent in paying at least part of the rent, prescribes the posted-notice content and the condition for providing a new key, and sets tenant remedies for violations. Subsection (h) lets the lease supersede the section to the extent of conflict.",
+   "binding_status": "binding",
+   "quote": "A landlord may not intentionally prevent a tenant from entering the leased premises except by judicial process unless the exclusion results from"
+  },
+  {
+   "authority_id": "tx-prop-93.003",
+   "citation": "Tex. Prop. Code \u00a7 93.003",
+   "relevance": "Provides the sworn complaint and writ of reentry procedure in justice court for a tenant locked out in violation of Section 93.002, with a hearing between the first and seventh day after the landlord requests one.",
+   "binding_status": "binding",
+   "quote": "The tenant must file with the justice court in the precinct in which the rental premises are located a sworn complaint for reentry"
+  },
+  {
+   "authority_id": "tx-prop-93.012",
+   "citation": "Tex. Prop. Code \u00a7 93.012",
+   "relevance": "Prohibits a landlord from assessing a charge, other than rent or physical damage, unless the amount or method of computation is stated in the lease, an exhibit, or an amendment. Relevant to the $1,500 lockout and administrative fee.",
+   "binding_status": "binding",
+   "quote": "A landlord may not assess a charge, excluding a charge for rent or physical damage to the leased premises, to a tenant unless the amount of the charge or the method by which the charge is to be computed is stated in the lease"
+  },
+  {
+   "authority_id": "tx-prop-93.005",
+   "citation": "Tex. Prop. Code \u00a7 93.005",
+   "relevance": "Requires refund of a commercial security deposit within 60 days after surrender and notice of forwarding address; relevant if the lease is terminated.",
+   "binding_status": "binding",
+   "quote": "The landlord shall refund the security deposit to the tenant not later than the 60th day after the date the tenant surrenders the premises"
+  },
+  {
+   "authority_id": "tx-prop-91.004",
+   "citation": "Tex. Prop. Code \u00a7 91.004",
+   "relevance": "Makes a landlord liable to a non-defaulting tenant for damages from the landlord's failure to comply with the lease; the 'not in default' condition is contested here.",
+   "binding_status": "binding",
+   "quote": "If the landlord of a tenant who is not in default under a lease fails to comply in any respect with the lease agreement, the landlord is liable to the tenant for damages resulting from the failure"
+  },
+  {
+   "authority_id": "tx-prop-24.005",
+   "citation": "Tex. Prop. Code \u00a7 24.005",
+   "relevance": "Sets notice-to-vacate requirements if Landlord pursues an eviction suit rather than, or in addition to, self-help remedies.",
+   "binding_status": "binding",
+   "quote": null
+  },
+  {
+   "authority_id": "tx-cprc-38.001",
+   "citation": "Tex. Civ. Prac. & Rem. Code \u00a7 38.001",
+   "relevance": "Permits recovery of reasonable attorney's fees on a claim for an oral or written contract, in addition to the lease's own prevailing-party clause.",
+   "binding_status": "binding",
+   "quote": "an oral or written contract"
+  },
+  {
+   "authority_id": "none",
+   "citation": "Texas common law on dependent versus independent covenants and the effect of 'independent covenant' clauses",
+   "relevance": "Whether a tenant may ever withhold rent for a landlord's repair breach despite an independent-covenant clause is governed by Texas case law not contained in the local library.",
+   "binding_status": "unverified",
+   "quote": null
+  },
+  {
+   "authority_id": "none",
+   "citation": "Texas Rules of Civil Procedure, Part V (justice court rules) including the eviction and reentry procedures",
+   "relevance": "Procedural rules for a sworn complaint for reentry and any eviction suit; not in the local library.",
+   "binding_status": "unverified",
+   "quote": null
+  },
+  {
+   "authority_id": "tx-prop-999.999",
+   "citation": "Tex. Prop. Code \u00a7 999.999",
+   "relevance": "Fabricated section used to test the verifier.",
+   "binding_status": "binding",
+   "quote": "A landlord shall always lose."
+  }
+ ],
+ "missing_information": [
+  "Trinity Mechanical invoice and proof of the $8,400 payment (F7 rests on Tenant's email only).",
+  "Certified mail receipt or USPS tracking for the August 11, 2025 notice of default.",
+  "Exhibit C (Guaranty) is referenced but not in the file, so the guarantor's exposure cannot be assessed.",
+  "The 2024 annual operating-expense reconciliation statement required by Section 9.2, or confirmation it was never delivered.",
+  "A rent ledger or bank records showing payments through July 2025 and whether any prior late payments were accepted.",
+  "Any quarterly HVAC preventive maintenance contract required by Section 7.2, or confirmation none existed.",
+  "Photographs of the posted lockout notice and the current status of access to the Premises."
+ ],
+ "caveats": [
+  "All dates in the email chain come from a Tenant-printed compilation; original message headers were not provided.",
+  "The authority library contains statutes only. Case law interpreting independent-covenant clauses and the scope of Section 93.002(h) was not available for verification."
+ ]
+}

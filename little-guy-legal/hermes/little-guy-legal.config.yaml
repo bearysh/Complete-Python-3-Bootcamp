@@ -1,0 +1,63 @@
+# Hermes Agent profile configuration for Little Guy Legal (profile name: little-guy-legal)
+# Verified against hermes-agent 0.19.0 source (file:line references in docs/HERMES_INTEGRATION.md).
+# Install with: bash hermes/setup_profile.sh   (never edits the personal default profile)
+#
+# <<< EDIT: set base_url/model to the exact OMLX endpoint and model id reported by `curl http://127.0.0.1:<port>/v1/models` >>>
+
+model:
+  provider: custom                      # generic OpenAI-compatible endpoint (hermes_cli/runtime_provider.py)
+  base_url: http://127.0.0.1:8000/v1    # OMLX — loopback only
+  default: REPLACE_WITH_EXACT_OMLX_MODEL_ID
+  api_key: no-key-required              # OMLX key if it enforces one; otherwise Hermes' keyless placeholder
+  api_mode: chat_completions
+  max_tokens: 6000
+
+# No cloud fallback of any kind (hermes_cli/fallback_config.py)
+fallback_providers: []
+providers: {}
+
+# Built-in memory, user profile memory, and memory plugins disabled (hermes_cli/config.py:2304-2325)
+memory:
+  memory_enabled: false
+  user_profile_enabled: false
+  provider: ""
+
+# The API server platform gets NO configurable toolsets and no MCP servers (hermes_cli/tools_config.py:1721-1976)
+platform_toolsets:
+  api_server: [no_mcp]
+
+# Belt and braces: disable the tool families globally for this profile (hermes_cli/config.py:1189)
+agent:
+  disabled_toolsets: [memory, session_search, skills, terminal, browser, web, file, code_execution, delegation, cronjob, vision, image_gen, video_gen, x_search, tts, homeassistant, spotify, computer_use, clarify, todo, context_engine]
+
+# No automatic skill learning or skill writes; no background curator
+skills:
+  creation_nudge_interval: 0
+  write_approval: true
+  disabled: []
+curator:
+  enabled: false
+
+# No model-catalog fetch (would contact hermes-agent.nousresearch.com)
+model_catalog:
+  enabled: false
+
+# Session transcripts live in this profile's state.db; prune automatically
+sessions:
+  auto_prune: true
+  retention_days: 30
+
+gateway:
+  api_server:
+    max_concurrent_runs: 1              # one local inference at a time
+
+# Auxiliary model tasks pinned to the same local endpoint so nothing can route elsewhere
+auxiliary:
+  compression:
+    provider: custom
+    base_url: http://127.0.0.1:8000/v1
+    model: REPLACE_WITH_EXACT_OMLX_MODEL_ID
+  background_review:
+    provider: custom
+    base_url: http://127.0.0.1:8000/v1
+    model: REPLACE_WITH_EXACT_OMLX_MODEL_ID

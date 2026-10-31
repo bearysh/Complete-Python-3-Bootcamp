@@ -1,0 +1,67 @@
+[
+ {
+  "check": "1. application reachable on localhost",
+  "pass": true,
+  "detail": "http://127.0.0.1:8768"
+ },
+ {
+  "check": "4. real local inference provider configured",
+  "pass": false,
+  "detail": "provider=scripted model=fixture:default (SCRIPTED TEST PROVIDER \u2014 criterion NOT met)"
+ },
+ {
+  "check": "2. PDF and DOCX uploaded and extracted",
+  "pass": true,
+  "detail": "D1=6 segments, D2=17 segments, D3=49 segments"
+ },
+ {
+  "check": "3. all specialist stages executed",
+  "pass": true,
+  "detail": "3s"
+ },
+ {
+  "check": "7. verification flagged/unverified items reported",
+  "pass": true,
+  "detail": "{\"total_checks\": 93, \"verified\": 88, \"failed\": 5, \"material_failures\": 0, \"unsupported_findings\": 0, \"fabricated_authority_refs\": 0}"
+ },
+ {
+  "check": "6. evidence references inspectable",
+  "pass": true,
+  "detail": "D1:p1 -> ARTICLE 1. BASIC LEASE INFORMATION AND DEFINITIONS; ARTICLE 2. PREMISES AND TERM"
+ },
+ {
+  "check": "8a. draft report awaiting human approval",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "check": "8b. operator approval recorded",
+  "pass": true,
+  "detail": "reviewed_at=2026-10-31T20:52:19+00:00 acknowledged_failures=0"
+ },
+ {
+  "check": "9. readable PDF exported",
+  "pass": true,
+  "detail": "63671 bytes"
+ },
+ {
+  "check": "eval: major issues detected",
+  "pass": true,
+  "detail": "100%"
+ },
+ {
+  "check": "eval: competing arguments materially different",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "check": "eval: no forbidden certainty phrases",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "check": "eval: no fabricated authorities accepted",
+  "pass": true,
+  "detail": ""
+ }
+]
